@@ -1,0 +1,11 @@
+--Instruções - Criação do projeto-- 
+
+1 -  npm create vite@latest frontend (escolha React e Javascript)
+2 - npm install
+3 - npm install axios
+4 - npm install -D tailwindcss postcss autoprefixer
+5 - npm install -D @tailwindcss/vite
+6 - npm install react-router-dom
+
+--Execução do projeto--
+npm run dev (vai rodar na porta http://localhost:5173/)
