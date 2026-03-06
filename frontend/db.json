@@ -1,0 +1,14 @@
+{
+  "pessoas": [
+    {
+      "id": "55a9",
+      "nome": "Matheus da Silva Carvalho",
+      "email": "matheusc@email.com",
+      "cpf": "000.000.000-00",
+      "senha": "123456789",
+      "buscando": "estudante"
+    }
+  ],
+  "conhecimentos": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
