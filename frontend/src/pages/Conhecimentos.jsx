@@ -158,10 +158,10 @@ export const Conhecimentos = () => {
                     onClick={() => setOfertaSelecionada(oferta)}
                   >
                     <div className="flex gap-2 mb-4">
-                      <span className="bg-[#2092D3] bg-opacity-10 text-[#0162B3] font-bold text-[10px] px-3 py-1 rounded-full uppercase">
+                      <span className="bg-[#2092D3] bg-opacity-10 text-[#FFFFFF] font-bold text-[10px] px-3 py-1 rounded-full uppercase">
                         {oferta.categoria}
                       </span>
-                      <span className="bg-[#524f4f] bg-opacity-10 text-[#2E2E2E] font-bold text-[10px] px-3 py-1 rounded-full uppercase">
+                      <span className="bg-[#524f4f] bg-opacity-10 text-[#FFFFFF] font-bold text-[10px] px-3 py-1 rounded-full uppercase">
                         {oferta.nivel}
                       </span>
                     </div>
@@ -208,10 +208,10 @@ export const Conhecimentos = () => {
               &times;
             </button>
             <div className="flex gap-2 mb-6 border-b border-[#E5E7EB] pb-4 pr-12">
-              <span className="bg-[#2092D3] bg-opacity-10 text-[#0162B3] font-bold text-[12px] px-4 py-1.5 rounded-full uppercase">
+              <span className="bg-[#2092D3] bg-opacity-10 text-[#FFFFFF] font-bold text-[12px] px-4 py-1.5 rounded-full uppercase">
                 {ofertaSelecionada.categoria}
               </span>
-              <span className="bg-[#524f4f] bg-opacity-10 text-[#2E2E2E] font-bold text-[12px] px-4 py-1.5 rounded-full uppercase">
+              <span className="bg-[#524f4f] bg-opacity-10 text-[#FFFFFF] font-bold text-[12px] px-4 py-1.5 rounded-full uppercase">
                 {ofertaSelecionada.nivel}
               </span>
             </div>

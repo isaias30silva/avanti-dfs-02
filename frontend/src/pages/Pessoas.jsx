@@ -3,6 +3,7 @@ import { api } from "../services/api";
 
 export const Pessoas = () => {
   const [pessoas, setPessoas] = useState([]);
+  const [busca, setBusca] = useState("");
 
   useEffect(() => {
     async function carregar() {
@@ -18,6 +19,14 @@ export const Pessoas = () => {
     }
     carregar();
   }, []);
+
+  const pessoasFiltradas = pessoas.filter((pessoa) => {
+    const termo = busca.toLowerCase();
+    return (
+      pessoa.nome.toLowerCase().includes(termo) ||
+      (pessoa.descricao && pessoa.descricao.toLowerCase().includes(termo))
+    );
+  });
 
   return (
     <>
@@ -42,19 +51,36 @@ export const Pessoas = () => {
                 Mentores Cadastrados
               </h2>
               <span className="bg-[#E5E7EB] text-[#524f4f] font-bold px-4 py-1.5 rounded-full text-[14px] whitespace-nowrap">
-                {pessoas.length} Encontrados
+                {pessoasFiltradas.length} Encontrados
               </span>
             </div>
+            <div className="bg-white p-5 md:p-6 rounded-2xl shadow-sm mb-10 flex flex-col md:flex-row gap-4 border border-[#E5E7EB]">
+              <input
+                type="text"
+                placeholder="Buscar por nome ou descrição..."
+                className="flex-1 bg-[#F8F9FA] border border-[#E5E7EB] p-3.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0162B3] text-[14px]"
+                value={busca}
+                onChange={(e) => setBusca(e.target.value)}
+              />
+            </div>
 
-            {pessoas.length === 0 ? (
+            {pessoasFiltradas.length === 0 ? (
               <div className="text-center py-20 bg-white rounded-2xl border border-[#E5E7EB] shadow-sm">
-                <p className="text-[#524f4f] text-[18px] font-light">
+                <p className="text-[#524f4f] text-[18px] font-light mb-4">
                   Nenhum mentor encontrado na rede.
                 </p>
+                {busca && (
+                  <button
+                    onClick={() => setBusca("")}
+                    className="text-[#0162B3] text-[16px] font-bold hover:underline"
+                  >
+                    Limpar Filtros
+                  </button>
+                )}
               </div>
             ) : (
               <div className="flex flex-col gap-5">
-                {pessoas.map((pessoa) => (
+                {pessoasFiltradas.map((pessoa) => (
                   <div
                     key={pessoa.id}
                     className="bg-white p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border border-[#E5E7EB] flex flex-col sm:flex-row items-center sm:items-start gap-6 group"

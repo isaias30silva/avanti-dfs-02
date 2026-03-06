@@ -27,7 +27,7 @@ export const HeroSection = () => {
       </div>
 
       <div className="w-full max-w-7xl mx-auto relative z-10 flex flex-col items-center">
-        <span className="inline-block bg-[#2092D3] bg-opacity-20 text-[#FFD84F] font-bold text-[12px] md:text-[14px] px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest border border-[#2092D3]/30">
+        <span className="inline-block bg-[#13225E] bg-opacity-20 text-[#FFD84F] font-bold text-[12px] md:text-[14px] px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest border border-[#2092D3]/30">
           A maior rede colaborativa do Brasil
         </span>
         <h1 className="text-[28px] md:text-[40px] font-extrabold mb-6 leading-[1.2] drop-shadow-xl tracking-tight">

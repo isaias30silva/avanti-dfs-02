@@ -1,16 +1,25 @@
-# 📚 Banco de Trocas de Conhecimento
+# 📚 ${\color{#0162B3} \mathsf{SkillMatch}}$: O Ensino ao Seu Alcance.
 
-![Status](https://img.shields.io/badge/Status-em_desenvolvimento-orange) ![License](https://img.shields.io/badge/License-proprietary-red)
+![Status](https://img.shields.io/badge/Status-em_desenvolvimento-orange)
+![License](https://img.shields.io/badge/License-proprietary-darkred)
 
 ## 📌 Introdução
 
-O **Banco de Trocas de Conhecimento** é uma aplicação web desenvolvida como proposta do curso de **Desenvolvimento Full Stack** da **Escola Atlântico Avanti**.
+O **SkillMatch** é um **Banco de Trocas de Conhecimento** desenvolvido como aplicação web para o curso de **Desenvolvimento Full Stack** da **Escola Atlântico Avanti**.
 
 A plataforma surge como uma solução para a dificuldade enfrentada por pessoas que desejam aprender novas habilidades sem recursos financeiros, conectando-as a indivíduos dispostos a compartilhar seus conhecimentos de forma colaborativa e gratuita. O objetivo é democratizar o acesso ao aprendizado através da tecnologia.
 
 ---
 
-## ⚠️ Problematização
+## ⚠️ Back-end necessário
+
+O SkillMatch utiliza uma **API REST** robusta para o gerenciamento de dados e autenticação.
+
+🔗 **Link para o Back-end:** [SkillMatch API](https://github.com/LucasCavalheiro21/avanti-dfs-02.git)
+
+---
+
+## ❓ Problematização
 
 Atualmente, a troca de conhecimentos ocorre de forma desorganizada em grupos de mensagens ou redes sociais. Isso gera:
 
@@ -38,52 +47,43 @@ Desenvolver uma aplicação web funcional (Full Stack) que permita o **cadastro,
 
 ---
 
-## ⚙️ Funcionalidades do Sistema
+## ⚙️ Funcionalidades da Interface
 
-O escopo do sistema abrange:
+O SkillMatch foi projetado para oferecer uma experiência fluida e intuitiva:
 
-1.  **Módulo de Pessoas:** Cadastro completo com nome, e-mail, telefone e bio.
+1.  **Navegação Inteligente:** Sistema de rotas dinâmicas para alternar entre a vitrine de conhecimentos e os formulários de cadastro
    
-2.  **Módulo de Conhecimentos:**
-    * Cadastro de oferta (Título, Descrição, Categoria, Nível).
-    * Associação automática com o usuário responsável.
+2.  **Filtros em Tempo Real:** Motores de busca que permitem encontrar mentores por categoria ou nível de conhecimento instantaneamente.
   
-3.  **Visualização:** Listagem de cards com detalhes da oferta.
+3.  **Design Responsivo:** Interface totalmente adaptável para dispositivos móveis e desktop, desenvolvida com TailwindCSS.
    
-4.  **Filtros Avançados:** Busca por Categoria (ex: Tecnologia, Música) e Nível (Básico, Avançado).
+4.  **Integração em Tempo Real:** Comunicação via Axios com a API, garantindo que os dados exibidos estejam sempre atualizados.
+
+5. **Feedback ao Usuário:** Notificações e modais que confirmam ações de sucesso ou alertam sobre erros de preenchimento.
 
 ---
 
 ## 🛠️ Stacks e Tecnologias
 
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![Axios](https://img.shields.io/badge/axios-671ddf?style=for-the-badge&logo=axios&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React DOM](https://img.shields.io/badge/React_DOM-20232a?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-005571?style=for-the-badge&logo=api&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Insomnia](https://img.shields.io/badge/Insomnia-5849be?style=for-the-badge&logo=Insomnia&logoColor=white)
-![DBeaver](https://img.shields.io/badge/DBeaver-382923?style=for-the-badge&logo=dbeaver&logoColor=white)
 
 ---
 
 ## 🚀 Como rodar o projeto
-
-### 📋 Pré-requisitos
-
-Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
-
-- [Git](https://git-scm.com/)
-- [npm](https://npmjs.com/)
-- [Node.js](https://nodejs.org/en/)
-- [PostgreSQL](https://www.postgresql.org/)
-- (Opcional) [DBeaver](https://dbeaver.io/) ou [PgAdmin](https://www.pgadmin.org/) para gerenciar o banco
 
 ### 🔧 Instalação e Configuração
 
@@ -92,7 +92,7 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em s
 No terminal, navegue até a pasta onde deseja salvar o projeto e execute:
 
 ```bash
-git clone https://github.com/LucasCavalheiro21/avanti-dfs-02.git
+git clone https://github.com/isaias30silva/avanti-dfs-02.git
 ```
 
 #### 2. Acesse a pasta do projeto
@@ -103,12 +103,12 @@ Entre na pasta raiz do repositório clonado:
 cd avanti-dfs-02
 ```
 
-#### 3. Acesse o diretório do Back-End
+#### 3. Acesse o diretório do Front-End
 
-As configurações do servidor estão na pasta Back-End. Navegue até ela:
+As configurações do servidor estão na pasta Front-End. Navegue até ela:
 
 ```bash
-cd BackEnd
+cd frontend
 ```
 
 #### 4. Instale as dependências
@@ -119,122 +119,44 @@ Execute o comando abaixo para instalar todas as bibliotecas necessárias listada
 npm install
 ```
 
-#### 5. Configuração do Banco de Dados
-
-Abra seu gerenciador de banco ou terminal do PostgreSQL e crie um banco novo.
-
-#### 6. Configuração das Variáveis de Ambiente (.env)
-
-Crie um arquivo chamado .env na raiz da pasta Back-End. Dentro dele, adicione a string de conexão com o seu banco de dados PostgreSQL:
-
-```env
-DATABASE_URL="postgresql://USUARIO:SENHA@localhost:5432/NOME_DO_BANCO"
-```
-
-Atenção: Substitua USUARIO, SENHA e NOME_DO_BANCO pelas credenciais do seu PostgreSQL local.
-
-#### 7. Configure o Banco de Dados (Prisma)
-
-Para criar as tabelas no seu banco de dados local com base no esquema do projeto, execute:
-
-```bash
-npx prisma migrate dev
-```
-
-Em seguida, gere o cliente do Prisma (necessário para o código interagir com o banco):
-
-```bash
-npx prisma generate
-```
-
-#### 8. Executando o Projeto
+#### 4. Executando o Projeto
 
 Com tudo configurado, inicie o servidor:
 
 ```bash
-npm start
+npm run dev
 ```
 
-#### 9. Testando a API
-
-O projeto roda, por padrão, em http://localhost:8080
-
-Você pode testar as rotas usando o [Insomnia](https://insomnia.rest/) ou o próprio navegador (para requisições GET).
-
-Principais rotas disponíveis para teste:
-
-| Método | Rota | Descrição |
-|---|---|---|
-| GET | `/pessoas` | Lista todos os usuários |
-| POST | `/pessoas` | Cria um novo usuário |
-| GET | `/conhecimentos` | Lista os conhecimentos disponíveis |
-| POST | `/conhecimentos` | Cria uma nova oferta |
-
-Facilitando a busca com filtros (busca parcial):
-
-| Filtro | Rota | Descrição |
-|---|---|---|
-| Nome | `/pessoas?nome=carlos` | Buscar por nome |
-| Descrição | `/pessoas?descricao=matematica` | Buscar por palavras-chave |
-| Combinando filtros | `/pessoas?nome=luc&descricao=professor` | Buscas específicas |
-| Título | `/conhecimentos?titulo=javascript` | Buscar por título |
-| Descrição | `/conhecimentos?descricao=programação` | Buscar por palavras-chave |
-| Categoria | `/conhecimentos?categoria=educa` | Buscar por categorias |
-| Nível | `/conhecimentos?nivel=intermed` | Buscar por níveis |
-| Combinando filtros | `/conhecimentos?titulo=mat&categoria=educação` | Buscas específicas |
-
----
-
-## 🔮 Próximos Passos
-
-O projeto entrará em uma nova fase de evolução, focada em **segurança da aplicação** e no desenvolvimento da **camada de apresentação (Front-End)**.
-
-### 🔐 Autenticação e Autorização (Back-End)
-
-- Implementação de autenticação baseada em **JWT (JSON Web Token)**;
-- Criptografia de senhas utilizando **bcrypt**;
-- Criação de rota de login com validação de credenciais;
-- Implementação de middleware para proteção de rotas privadas;
-- Controle de autorização garantindo que usuários possam editar ou excluir apenas suas próprias ofertas;
-- Estruturação de controle de acesso baseado em identidade do usuário autenticado.
-
-### 🎨 Desenvolvimento do Front-End
-
-O frontend será desenvolvido com **ReactJS**, fornecendo uma interface simples, responsiva e intuitiva, integrada à API REST do backend.
-
-#### Funcionalidades previstas:
-
-- Exibir a lista de conhecimentos disponíveis;
-- Implementar formulários para cadastro de pessoas e ofertas;
-- Permitir edição e remoção das ofertas;
-- Desenvolver uma **landing page** apresentando a proposta da plataforma;
-- Implementar autenticação no cliente (login e controle de sessão);
-- Realizar integração completa com a API via requisições HTTP.
+Acesse SkillMatch em: http://localhost:5173
 
 ---
 
 ## 👥 Equipe de Desenvolvimento
 
 [@Lucas Cavalheiro](https://github.com/LucasCavalheiro21)
-- Setup Inicial e Orquestração: Inicialização do repositório Git e configuração do ambiente de desenvolvimento (gerenciamento de dependências e variáveis de ambiente).
-- Arquitetura de Persistência: Configuração do Prisma ORM, incluindo a definição de providers, geração do Prisma Client e estruturação inicial do schema.prisma.
+- Desenvolvimento de motores de filtragem dinâmica para otimizar a localização de registros e a experiência de busca na aplicação.
+- Implementação da lógica de navegação e integração dos botões de ação (Edição/Exclusão) com as rotas de formulário.
+- Responsável pela manutenção e estruturação do arquivo README, garantindo clareza na comunicação técnica e das contribuições.
 
 [@Isaias Menezes Silva](https://github.com/isaias30silva)
-- Core e Routing: Configuração do ponto de entrada da aplicação (server.js) e estruturação da malha de rotas (routes.js), assegurando o correto direcionamento das requisições HTTP para seus respectivos controllers.
+- Inicialização do repositório frontend e configuração do Axios, incluindo a definição da BaseURL e interceptores para comunicação com a API REST.
+- Configuração do sistema de roteamento dinâmico da aplicação e implementação da estrutura base das páginas principais (Home e Cadastro).
 
 [@Matheus da Silva Carvalho](https://github.com/mc4rvalho)
-- ​Gestão de Entidades (Conhecimentos): Implementação do conhecimentosController, sendo responsável por toda a lógica de negócio e operações CRUD (Create, Read, Update, Delete) para o gerenciamento de competências.
+- Desenvolvimento dos módulos de criação, edição e exclusão, incluindo a implementação de regras de validação de campos e manipulação de estado.
+- Implementação de lógica para exibição controlada de usuários na Home Page, utilizando componentes de carrossel/slider para otimização de espaço e performance.
 
 [@Pedro Fernandes](https://github.com/pedrofernandesx)
-- Gestão de Entidades (Pessoas): Desenvolvimento do módulo pessoasController, responsável pela persistência e manipulação de dados referentes aos usuários/perfis no sistema via operações CRUD.
+- Criação do componente de "Card" para ofertas, garantindo a exibição dinâmica de metadados e a consistência visual.
+- Implementação de geradores de avatares aleatórios e ajustes de responsividade nos componentes para garantir a visualização em múltiplos dispositivos.
 
 [@Giselle Thamyris Oliveira de Morais](https://github.com/giswolfie)
-- ​Modelagem de Dados: Estruturação das tabelas e relacionamentos através do schema.prisma.
-- ​Validação e Testes: Execução de testes de integração e validação de endpoints da API utilizando Insomnia, garantindo a integridade dos dados e o correto funcionamento das rotas HTTP.
+- Responsável pela concepção visual, definição da paleta de cores, tipografia e layout de todas as páginas, garantindo a fidelidade visual e usabilidade.
+- Implementação de componentes de feedback (modais, loaders ou notificações) para melhorar a comunicação do sistema com o usuário.
 
 ---
 
 ## © Direitos Autorais
 
-Este software é propriedade intelectual da **Equipe 2** de desenvolvimento do Projeto DFS-2026.1 da **Escola Atlântico Avanti**.
+SkillMatch é propriedade intelectual da **Equipe 2** de desenvolvimento do Projeto DFS-2026.1 da **Escola Atlântico Avanti**.
 **Todos os direitos reservados.** É proibida a cópia, redistribuição ou uso comercial sem autorização expressa dos autores.

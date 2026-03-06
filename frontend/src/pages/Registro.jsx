@@ -92,7 +92,7 @@ export const Registro = () => {
           </div>
         </div>
 
-        <div className="bg-[#c4ccf4] w-full max-w-105 h-auto md:h-160 rounded-[40px] p-7.5 shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex items-center shrink-0">
+        <div className="bg-[#00a8ff] w-full max-w-105 h-auto md:h-160 rounded-[40px] p-7.5 shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex items-center shrink-0">
           <div className="bg-[#fcfcfc] w-full h-full rounded-[30px] px-7.5 py-6 flex flex-col justify-center">
             <form onSubmit={registrar} className="flex flex-col gap-2.5">
               <div className="flex flex-col gap-1 text-left">

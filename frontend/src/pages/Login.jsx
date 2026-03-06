@@ -68,10 +68,10 @@ export const Login = () => {
           </div>
         </div>
 
-        <div className="bg-[#c4ccf4] w-full max-w-105 h-auto md:h-160 rounded-[40px] p-7.5 shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex items-center shrink-0">
+        <div className="bg-[#00a8ff] w-full max-w-105 h-auto md:h-160 rounded-[40px] p-7.5 shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex items-center shrink-0">
           <div className="bg-[#fcfcfc] w-full h-full rounded-[30px] px-7.5 py-8.75 flex flex-col justify-center">
             <form onSubmit={fazerLogin} className="flex flex-col gap-4">
-              <h2 className="text-[24px] font-bold text-[#13225E] mb-1">
+              <h2 className="text-[24px] font-bold text-[#00a8ff] mb-1">
                 Entrar
               </h2>
 
