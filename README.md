@@ -1,17 +1,25 @@
-# 📚 Banco de Trocas de Conhecimento
+# 📚 ${\color{#0162B3} \mathsf{SkillMatch}}$: O Ensino ao Seu Alcance.
 
 ![Status](https://img.shields.io/badge/Status-em_desenvolvimento-orange)
-![License](https://img.shields.io/badge/License-proprietary-red)
+![License](https://img.shields.io/badge/License-proprietary-darkred)
 
 ## 📌 Introdução
 
-O **Banco de Trocas de Conhecimento** é uma aplicação web desenvolvida como proposta do curso de **Desenvolvimento Full Stack** da **Escola Atlântico Avanti**.
+O **SkillMatch** é um **Banco de Trocas de Conhecimento** desenvolvido como aplicação web para o curso de **Desenvolvimento Full Stack** da **Escola Atlântico Avanti**.
 
 A plataforma surge como uma solução para a dificuldade enfrentada por pessoas que desejam aprender novas habilidades sem recursos financeiros, conectando-as a indivíduos dispostos a compartilhar seus conhecimentos de forma colaborativa e gratuita. O objetivo é democratizar o acesso ao aprendizado através da tecnologia.
 
 ---
 
-## ⚠️ Problematização
+## ⚠️ Back-end necessário
+
+O SkillMatch utiliza uma **API REST** robusta para o gerenciamento de dados e autenticação.
+
+🔗 **Link para o Back-end:** [SkillMatch API](https://github.com/LucasCavalheiro21/avanti-dfs-02.git)
+
+---
+
+## ❓ Problematização
 
 Atualmente, a troca de conhecimentos ocorre de forma desorganizada em grupos de mensagens ou redes sociais. Isso gera:
 
@@ -39,33 +47,38 @@ Desenvolver uma aplicação web funcional (Full Stack) que permita o **cadastro,
 
 ---
 
-## ⚙️ Funcionalidades do Sistema
+## ⚙️ Funcionalidades da Interface
 
-O escopo do sistema abrange:
+O SkillMatch foi projetado para oferecer uma experiência fluida e intuitiva:
 
-1.  **Módulo de Pessoas:** Cadastro completo com nome, e-mail, telefone e bio.
+1.  **Navegação Inteligente:** Sistema de rotas dinâmicas para alternar entre a vitrine de conhecimentos e os formulários de cadastro
    
-2.  **Módulo de Conhecimentos:**
-    * Cadastro de oferta (Título, Descrição, Categoria, Nível).
-    * Associação automática com o usuário responsável.
+2.  **Filtros em Tempo Real:** Motores de busca que permitem encontrar mentores por categoria ou nível de conhecimento instantaneamente.
   
-3.  **Visualização:** Listagem de cards com detalhes da oferta.
+3.  **Design Responsivo:** Interface totalmente adaptável para dispositivos móveis e desktop, desenvolvida com TailwindCSS.
    
-4.  **Filtros Avançados:** Busca por Categoria (ex: Tecnologia, Música) e Nível (Básico, Avançado).
+4.  **Integração em Tempo Real:** Comunicação via Axios com a API, garantindo que os dados exibidos estejam sempre atualizados.
+
+5. **Feedback ao Usuário:** Notificações e modais que confirmam ações de sucesso ou alertam sobre erros de preenchimento.
 
 ---
 
 ## 🛠️ Stacks e Tecnologias
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![Axios](https://img.shields.io/badge/axios-671ddf?style=for-the-badge&logo=axios&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React DOM](https://img.shields.io/badge/React_DOM-20232a?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-005571?style=for-the-badge&logo=api&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ---
@@ -90,9 +103,9 @@ Entre na pasta raiz do repositório clonado:
 cd avanti-dfs-02
 ```
 
-#### 3. Acesse o diretório do Back-End
+#### 3. Acesse o diretório do Front-End
 
-As configurações do servidor estão na pasta Back-End. Navegue até ela:
+As configurações do servidor estão na pasta Front-End. Navegue até ela:
 
 ```bash
 cd frontend
@@ -114,44 +127,36 @@ Com tudo configurado, inicie o servidor:
 npm run dev
 ```
 
-Acesse em: http://localhost:5173
-
----
-
-## Backend necessário
-
-Este front-end se comunica com uma **API REST** 
-
-Certifique-se de que o back-end esteja funcionando corretamente antes de usar o app.
-
-🔗 Repositório da API no GitHub: [backend](https://github.com/LucasCavalheiro21/avanti-dfs-02.git)
+Acesse SkillMatch em: http://localhost:5173
 
 ---
 
 ## 👥 Equipe de Desenvolvimento
 
 [@Lucas Cavalheiro](https://github.com/LucasCavalheiro21)
-- Desenvolvimento de motores de filtragem dinâmica para otimizar a localização de registros na aplicação.
-- Responsável pela manutenção e estruturação do arquivo README, garantindo clareza na comunicação do projeto e das contribuições.
+- Desenvolvimento de motores de filtragem dinâmica para otimizar a localização de registros e a experiência de busca na aplicação.
+- Implementação da lógica de navegação e integração dos botões de ação (Edição/Exclusão) com as rotas de formulário.
+- Responsável pela manutenção e estruturação do arquivo README, garantindo clareza na comunicação técnica e das contribuições.
 
 [@Isaias Menezes Silva](https://github.com/isaias30silva)
-- Inicialização do repositório frontend e configuração do Axios para consumo da API REST.
-- Implementação da estrutura base da Home Page e da página de fluxo para Cadastro de Pessoas.
+- Inicialização do repositório frontend e configuração do Axios, incluindo a definição da BaseURL e interceptores para comunicação com a API REST.
+- Configuração do sistema de roteamento dinâmico da aplicação e implementação da estrutura base das páginas principais (Home e Cadastro).
 
 [@Matheus da Silva Carvalho](https://github.com/mc4rvalho)
-- Desenvolvimento do módulo de criação, edição e exlusão, incluindo validação de campos.
-- Implementação de lógica para exibição limitada de usuários na Home Page, utilizando componentes de carrossel/slider para melhorar a navegação e a performance de carregamento.
+- Desenvolvimento dos módulos de criação, edição e exclusão, incluindo a implementação de regras de validação de campos e manipulação de estado.
+- Implementação de lógica para exibição controlada de usuários na Home Page, utilizando componentes de carrossel/slider para otimização de espaço e performance.
 
 [@Pedro Fernandes](https://github.com/pedrofernandesx)
-- Criação do componente de "Card" para ofertas, garantindo a exibição dinâmica de metadados (Título, Categoria e Nível).
-- Implementação de gerador de avatares aleatórios para preenchimento visual de perfis, assegurando uma interface rica mesmo em ambientes de teste.
+- Criação do componente de "Card" para ofertas, garantindo a exibição dinâmica de metadados e a consistência visual.
+- Implementação de geradores de avatares aleatórios e ajustes de responsividade nos componentes para garantir a visualização em múltiplos dispositivos.
 
 [@Giselle Thamyris Oliveira de Morais](https://github.com/giswolfie)
-- Responsável pela concepção visual e definição do layout de todas as páginas da aplicação, garantindo a fidelidade visual entre as telas e a experiência do usuário.
+- Responsável pela concepção visual, definição da paleta de cores, tipografia e layout de todas as páginas, garantindo a fidelidade visual e usabilidade.
+- Implementação de componentes de feedback (modais, loaders ou notificações) para melhorar a comunicação do sistema com o usuário.
 
 ---
 
 ## © Direitos Autorais
 
-Este software é propriedade intelectual da **Equipe 2** de desenvolvimento do Projeto DFS-2026.1 da **Escola Atlântico Avanti**.
+SkillMatch é propriedade intelectual da **Equipe 2** de desenvolvimento do Projeto DFS-2026.1 da **Escola Atlântico Avanti**.
 **Todos os direitos reservados.** É proibida a cópia, redistribuição ou uso comercial sem autorização expressa dos autores.
