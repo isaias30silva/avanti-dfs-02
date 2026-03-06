@@ -18,11 +18,7 @@ export default function HeroSection() {
           onClick={() => navigate("/pessoas")}
           className="bg-blue-600 text-white px-6 py-3 rounded-lg cursor-pointer hover:opacity-90 transition"
         >
-          Quero Aprender
-        </button>
-
-        <button className="bg-green-600 text-white px-6 py-3 rounded-lg cursor-pointer hover:opacity-90 transition">
-          Quero Ensinar
+          Quero me cadastrar
         </button>
       </div>
     </section>

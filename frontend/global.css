@@ -1,4 +1,4 @@
-/* Reset básico e variáveis de cores atualizadas */
+/* Reset básico e variáveis de cores atualizadas
 :root {
     --bg-dark: #1e1e1e;
     --primary-blue: #00a8ff;
@@ -34,8 +34,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+*/
 
-/* --- Painel Esquerdo  --- */
+/* --- Painel Esquerdo  --- 
 .left-panel {
     background-color: black;
     width: 320px;
@@ -44,19 +45,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Espalha os itens verticalmente */
-    align-items: center;
+    /*align-items: center;
     padding: 50px 20px 40px 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     text-align: center;
 }
+*/
 
-/* Header Esquerda */
+/* Header Esquerda 
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Mantém centralizado */
-    width: 100%;
+    /*width: 100%;
 }
 
 .logo-wrapper {
@@ -88,8 +90,9 @@ body {
     color: var(--text-gray);
     font-size: 12px;
 }
+*/
 
-/* Conteúdo Central Esquerdo */
+/* Conteúdo Central Esquerdo 
 .main-content {
     display: flex;
     flex-direction: column;
@@ -119,8 +122,9 @@ body {
 .subscribe-link:hover {
     opacity: 0.8;
 }
+    */
 
-/* Rodapé Esquerdo */
+/* Rodapé Esquerdo 
 .footer-text {
     color: var(--text-light);
     font-size: 14px;
@@ -131,8 +135,9 @@ body {
 .highlight-green {
     color: var(--primary-green);
 }
+    */
 
-/* --- Painel Direito (Formulário) --- */
+/* --- Painel Direito (Formulário) --- 
 .right-panel-outer {
     background-color: var(--bg-outer-form);
     width: 420px;
@@ -234,3 +239,4 @@ form {
         padding: 30px 20px;
     }
 }
+ */
