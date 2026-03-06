@@ -1,32 +1,32 @@
 import { useState, useEffect } from "react";
 import { api } from "../services/api";
-import FiltroPessoas from "../components/FiltroPessoas";
 
 export const Pessoas = () => {
   const [pessoas, setPessoas] = useState([]);
-
-  const carregarTodos = async () => {
-    try {
-      const response = await api.get("/pessoas");
-      const apenasMentores = response.data.filter(
-        (p) => p.buscando === "professor",
-      );
-      setPessoas(apenasMentores);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  const [busca, setBusca] = useState("");
 
   useEffect(() => {
-    carregarTodos();
+    async function carregar() {
+      try {
+        const response = await api.get("/pessoas");
+        const apenasMentores = response.data.filter(
+          (p) => p.buscando === "professor",
+        );
+        setPessoas(apenasMentores);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    carregar();
   }, []);
 
-  const atualizarLista = (resultadosDaBusca) => {
-    const apenasMentores = resultadosDaBusca.filter(
-      (p) => p.buscando === "professor",
+  const pessoasFiltradas = pessoas.filter((pessoa) => {
+    const termo = busca.toLowerCase();
+    return (
+      pessoa.nome.toLowerCase().includes(termo) ||
+      (pessoa.descricao && pessoa.descricao.toLowerCase().includes(termo))
     );
-    setPessoas(apenasMentores);
-  };
+  });
 
   return (
     <>
@@ -37,7 +37,8 @@ export const Pessoas = () => {
               Profissionais
             </h1>
             <p className="text-[16px] md:text-[24px] text-[#2092D3] font-light leading-relaxed">
-              Nossa rede de talentos. Descubra mentores prontos para ensinar você.
+              Nossa rede de talentos. Descubra mentores prontos para ensinar
+              você.
             </p>
             <div className="w-16 h-1.5 bg-[#FFD84F] mt-8 rounded-full mx-auto lg:mx-0"></div>
           </div>
@@ -50,21 +51,36 @@ export const Pessoas = () => {
                 Mentores Cadastrados
               </h2>
               <span className="bg-[#E5E7EB] text-[#524f4f] font-bold px-4 py-1.5 rounded-full text-[14px] whitespace-nowrap">
-                {pessoas.length} Encontrados
+                {pessoasFiltradas.length} Encontrados
               </span>
             </div>
+            <div className="bg-white p-5 md:p-6 rounded-2xl shadow-sm mb-10 flex flex-col md:flex-row gap-4 border border-[#E5E7EB]">
+              <input
+                type="text"
+                placeholder="Buscar por nome ou descrição..."
+                className="flex-1 bg-[#F8F9FA] border border-[#E5E7EB] p-3.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0162B3] text-[14px]"
+                value={busca}
+                onChange={(e) => setBusca(e.target.value)}
+              />
+            </div>
 
-            <FiltroPessoas onBuscar={atualizarLista} onLimpar={carregarTodos} />
-
-            {pessoas.length === 0 ? (
+            {pessoasFiltradas.length === 0 ? (
               <div className="text-center py-20 bg-white rounded-2xl border border-[#E5E7EB] shadow-sm">
-                <p className="text-[#524f4f] text-[18px] font-light">
-                  Nenhum mentor encontrado com esses critérios.
+                <p className="text-[#524f4f] text-[18px] font-light mb-4">
+                  Nenhum mentor encontrado na rede.
                 </p>
+                {busca && (
+                  <button
+                    onClick={() => setBusca("")}
+                    className="text-[#0162B3] text-[16px] font-bold hover:underline"
+                  >
+                    Limpar Filtros
+                  </button>
+                )}
               </div>
             ) : (
               <div className="flex flex-col gap-5">
-                {pessoas.map((pessoa) => (
+                {pessoasFiltradas.map((pessoa) => (
                   <div
                     key={pessoa.id}
                     className="bg-white p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border border-[#E5E7EB] flex flex-col sm:flex-row items-center sm:items-start gap-6 group"

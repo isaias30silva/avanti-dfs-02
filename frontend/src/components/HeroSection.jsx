@@ -52,7 +52,7 @@ export const HeroSection = () => {
             Quero Aprender
           </button>
           <button
-            onClick={() => navigate("/conhecimentos/novo")}
+            onClick={() => navigate("/conhecimentos")}
             className="bg-[#4BB002] text-white font-bold text-[16px] md:text-[18px] px-8 py-3 rounded-xl hover:bg-[#3da002] hover:-translate-y-1 transition-all duration-300 shadow-xl"
           >
             Quero Ensinar
