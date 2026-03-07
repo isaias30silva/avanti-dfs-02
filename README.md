@@ -159,5 +159,4 @@ Acesse SkillMatch em: http://localhost:5173
 ## © Direitos Autorais
 
 SkillMatch é propriedade intelectual da **Equipe 2** de desenvolvimento do Projeto DFS-2026.1 da **Escola Atlântico Avanti**.
-**Todos os direitos reservados.** É proibida a cópia, redistribuição ou uso comercial sem autorização expressa dos autores!
-2026
+**Todos os direitos reservados.** É proibida a cópia, redistribuição ou uso comercial sem autorização expressa dos autores.
