@@ -1,6 +1,6 @@
 # 📚 ${\color{#0162B3} \mathsf{SkillMatch}}$: O Ensino ao Seu Alcance.
 
-![Status](https://img.shields.io/badge/Status-em_desenvolvimento-orange)
+![Status](https://img.shields.io/badge/Status-atualizações_em_breve-darkgreen)
 ![License](https://img.shields.io/badge/License-proprietary-darkred)
 
 ## 📌 Introdução
